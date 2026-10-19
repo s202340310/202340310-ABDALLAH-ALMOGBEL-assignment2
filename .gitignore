@@ -1,0 +1,11 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# AI evidence is submitted on Blackboard, NOT in the repo
+conversations/
+artifacts/
+*-ai-evidence.zip
+*.zip

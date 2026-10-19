@@ -1,0 +1,136 @@
+:root {
+  --bg-color: #0f172a ;
+  --text-color: #c9d4f8 ;
+  --accent-color: #a2a7f3;
+  --font-main: sans-serif ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Important so layout sizing doesn’t break */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+.intro {
+  padding: 2rem 1rem;
+  text-align: center; /* Might need changing on desktop */
+}
+
+main {
+  padding: 1rem;
+}
+
+main section {
+  margin-bottom: 3rem;
+}
+
+#projects .project {
+  margin-bottom: 2rem; /* Helps spacing between project cards */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Makes form easier to read */
+  max-width: 500px; /* Prevents form from stretching too wide */
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  background: transparent; /* Can hurt readability in light mode */
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  font-family: inherit;
+}
+
+form button {
+  padding: 0.75rem;
+  background: var(--accent-color); /* Check contrast in light mode */
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Needs testing with long titles */
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex; /* Big layout shift — can cause issues if not tested */
+  }
+
+  .intro {
+    position: sticky; /* Sticky can glitch if parent has overflow hidden */
+    top: 0;
+    height: 100vh; /* Can be too tall on small laptops */
+    width: 35%; 
+    text-align: left;
+  }
+  .intro nav {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+    }
+
+  main {
+    width: 65%;
+    padding: 3rem; /* Might be too large on ultra-wide screens */
+  }
+}
+
+body[data-theme="light"] {
+  --bg-color: #99a2f1;   /* Very bright — may be too intense */
+  --text-color: #1a1a1a;
+  --accent-color: #0077cc; /* Could clash with bright background */
+}
+
+.intro nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.intro nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+.intro nav a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+/* =====================================================================
+   ASSIGNMENT 2 — new styles go below this line
+   TODO (add as each feature branch is built):
+   [ ] Smooth theme transition + saved-theme support
+   [ ] Filter buttons + search box (+ active state)
+   [ ] Project card hover effect + fade-in animation
+   [ ] "No projects found" empty state
+   [ ] Form error / success messages (+ animation)
+   ===================================================================== */
