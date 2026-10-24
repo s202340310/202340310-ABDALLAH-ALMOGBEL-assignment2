@@ -10,12 +10,12 @@ My personal portfolio website is built with plain HTML, CSS, and JavaScript. Ass
 
 | Requirement | Feature | Status |
 |---|---|---|
-| Dynamic content | Project category filters and live search | Implemented — verify locally |
-| Data handling | Theme preference saved with `localStorage` | Implemented — verify locally |
-| Data handling (extra) | Contact form validation and confirmation | Implemented — verify locally |
-| Animation / transitions | Theme transition, project hover effect, and reveal animation | Implemented — verify locally |
-| Error handling / feedback | Field errors, form status, and “No projects match” empty state | Implemented — verify locally |
-| AI enhancement | AI usage report and evidence | Complete the report and attach actual conversation exports |
+| Dynamic content | Project category filters and live search | Implemented |
+| Data handling | Theme preference saved with `localStorage` | Implemented|
+| Data handling (extra) | Contact form validation and confirmation | Implemented  |
+| Animation / transitions | Theme transition, project hover effect, and reveal animation | Implemented |
+| Error handling / feedback | Field errors, form status, and “No projects match” empty state | Implemented  |
+| AI enhancement | AI usage report and evidence | Completed |
 
 
 ## Setup Instructions (Run Locally)
@@ -29,7 +29,6 @@ No installation or build tools are needed.
 2. Open the project folder.
 3. Open `index.html` in your browser (or use the VS Code "Live Server" extension).
 
-<!-- TODO: add live demo link (GitHub Pages) if you deploy -->
 
 ## Project Structure
 
