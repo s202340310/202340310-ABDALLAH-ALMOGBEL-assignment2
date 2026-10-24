@@ -5,6 +5,7 @@
   --text-color: #c9d4f8;
   --muted-color: #a8b5d9;
   --accent-color: #a2a7f3;
+  --on-accent-color: #10152c;
   --border-color: #465474;
   --font-main: Arial, Helvetica, sans-serif;
   --shadow-color: rgb(0 0 0 / 22%);
@@ -36,6 +37,7 @@ body[data-theme="light"] {
   --text-color: #202744;
   --muted-color: #525d7a;
   --accent-color: #4f46e5;
+  --on-accent-color: #ffffff;
   --border-color: #c9d0e3;
   --shadow-color: rgb(22 34 67 / 12%);
 }
@@ -181,7 +183,7 @@ main section p {
 .filter-button[aria-pressed="true"] {
   border-color: var(--accent-color);
   background: var(--accent-color);
-  color: #10152c;
+  color: var(--on-accent-color);
   font-weight: 700;
 }
 
@@ -320,22 +322,34 @@ body[data-theme="light"] .field-error {
 .submit-button {
   border-color: var(--accent-color);
   background: var(--accent-color);
-  color: #10152c;
+  color: var(--on-accent-color);
   font-weight: 700;
 }
 
 /* Fade-in reveal is activated only when JavaScript and IntersectionObserver are available. */
+/* The reveal uses `translate` (not `transform`) so it does not clash with the card's hover lift. */
 .js-reveal-enabled .reveal-section,
 .js-reveal-enabled .reveal-card {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
+  translate: 0 16px;
+  transition: opacity 0.55s ease, translate 0.55s ease;
+}
+
+/* Cards repeat their own hover/theme transitions here, because this rule is more specific than `.project`. */
+.js-reveal-enabled .reveal-card {
+  transition:
+    opacity 0.55s ease,
+    translate 0.55s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background-color 0.25s ease;
 }
 
 .js-reveal-enabled .reveal-section.is-visible,
 .js-reveal-enabled .reveal-card.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  translate: 0 0;
 }
 
 @media (min-width: 600px) {
