@@ -3,7 +3,7 @@
 ## Project Description
 
 My personal portfolio website, built with plain HTML, CSS, and JavaScript.
-Assignment 2 builds on [Assignment 1](https://github.com/s202340310/202340310-ABDALLAH_ALMOGBEL-assignment1)
+Assignment 2 builds on [Assignment 1](https://github.com/s202340310/202340310-ABDALLAH-ALMOGBEL-assignment1)
 and adds interactivity: <!-- TODO: one-sentence summary once features are done -->
 
 ## Features Added in Assignment 2
