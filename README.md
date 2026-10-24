@@ -24,7 +24,7 @@ No installation or build tools are needed.
 
 1. Clone this repository:
    ```
-   git clone https://github.com/<your-github-username>/202340310-ABDALLAH_ALMOGBEL-assignment2.git
+   git clone https://github.com/s202340310/202340310-ABDALLAH-ALMOGBEL-assignment2.git
    ```
 2. Open the project folder.
 3. Open `index.html` in your browser (or use the VS Code "Live Server" extension).

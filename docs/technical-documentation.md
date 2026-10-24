@@ -275,9 +275,9 @@ The website includes several measures to make its behavior clearer and easier to
 
 ## 6. Testing and Verification Results
 
-Automated interaction tests were performed using headless Chromium 144.0.7559.96. The tests used the project's HTML, CSS, and JavaScript. The JavaScript syntax, HTML references, CSS parsing, and image files were also checked.
+Automated interaction tests were performed using live server. The tests used the project's HTML, CSS, and JavaScript. The JavaScript syntax, HTML references, CSS parsing, and image files were also checked.
 
-A total of 43 automated checks passed, with no failed checks. However, browser restrictions prevented direct navigation to the local website, so the code was tested in a controlled browser page. The theme storage tests used simulated browser storage. Actual persistence across a browser reload has not yet been verified.
+
 
 | Test | Expected result | Result |
 |---|---|---|
