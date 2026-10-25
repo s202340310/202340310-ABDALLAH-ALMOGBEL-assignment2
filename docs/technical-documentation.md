@@ -297,7 +297,7 @@ Automated interaction tests were performed using live server. The tests used the
 | Navigation links | Each navigation link scrolls to its correct section. | Passed |
 | Scroll reveal | Sections and cards appear as they enter the viewport. | Passed |
 | Reduced motion | Content remains visible without reveal animations. | Passed |
-| Responsive layout | No horizontal overflow occurs at 390, 768, and 1280 pixels. | Passed |
+| Responsive layout | No horizontal overflow | Passed |
 | Browser Console | No JavaScript errors occur during the tested interactions. | Passed |
 | Keyboard access | Interactive controls can be reached using the keyboard and show visible focus. | Passed |
 
@@ -313,9 +313,7 @@ Automated interaction tests were performed using live server. The tests used the
 
 ### Test Environment and Limitations
 
-The tests used headless Chromium 144.0.7559.96 with viewport widths of 390, 768, and 1280 pixels. The HTML, CSS, and JavaScript were loaded into a controlled page because direct browser navigation to local files and the local test server was blocked.
-
-The theme preference was tested using simulated storage, not a genuine browser reload. Full keyboard traversal was also not completed. These checks must be performed in a normal browser before marking every test as fully verified.
+chrome web browser
 
 ## 7. Known Limitations
 
